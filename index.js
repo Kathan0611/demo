@@ -1,6 +1,7 @@
 const express =require('express');
 const app = require("express")();
 const mogoose = require("mongoose");
+const body=require('express');
 require("dotenv").config();
 const {CreateProduct}=require('./Controller/ProductController');
 const Router =require('./Router/ProductRouter');
