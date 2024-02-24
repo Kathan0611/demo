@@ -11,7 +11,7 @@ const Router =require('./Router/ProductRouter');
 app.use(express.json());
 app.use("/product",Router);
 main().catch((err) => console.log(err));
-
+app.use('body-parser');
 async function main() {
   await mogoose.connect("mongodb://127.0.0.1:27017/test");
   console.log("connect database succefully");
