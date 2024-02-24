@@ -4,7 +4,7 @@ const mogoose = require("mongoose");
 require("dotenv").config();
 const {CreateProduct}=require('./Controller/ProductController');
 const Router =require('./Router/ProductRouter');
-
+const ex= require('express');
 
 //in req.body part if data not json then convert into json
 app.use(express.json());
